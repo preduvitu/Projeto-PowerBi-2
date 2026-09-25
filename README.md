@@ -1,58 +1,96 @@
 # 🎯 VAGA DIRETA
 
-**Vaga Direta** é uma plataforma desenvolvida como parte de um Trabalho de Conclusão de Curso (TCC) com o objetivo de **centralizar vagas de estágio** provenientes de diferentes plataformas em um único local.  
-A proposta é simplificar o processo de busca por oportunidades, oferecendo uma experiência rápida, intuitiva e personalizada para estudantes.
+**Vaga Direta** é uma plataforma desenvolvida com o objetivo de **centralizar e visualizar oportunidades de emprego**, utilizando um processo automatizado de extração e tratamento de dados.
+
+Este projeto foi finalizado a partir do **Projeto Bi**, disponível no perfil [@preduvitu](https://github.com/preduvitu). A versão atual evolui a camada de apresentação do projeto, substituindo a visualização final por uma aplicação desenvolvida em **React**, enquanto mantém o processo anterior de **extração, coleta e tratamento dos dados utilizando Python**.
+
+O objetivo dessa evolução foi demonstrar como um mesmo pipeline de dados pode alimentar diferentes formas de visualização e consumo das informações.
 
 ---
 
 ## 🚀 Tecnologias Utilizadas
 
-### 🔹 Back-end
+### 🔹 Extração e tratamento de dados
+
 - **Python 3.11+**
-- **Django** (dependendo da escolha final)
-- **BeautifulSoup / Scrapy** – para web scraping das plataformas de estágio
-- **PostgreSQL** – banco de dados relacional
-- **SQLAlchemy / psycopg2** – ORM e conexão com o banco
-- **Docker** (opcional, para ambiente padronizado)
+- **Web Scraping**
+- **BeautifulSoup / Selenium**
+- Tratamento e estruturação dos dados
+- Automação da coleta de vagas
 
 ### 🔹 Front-end
+
 - **React.js**
-- **Vite** (para build rápido)
-- **Axios** – para comunicação com a API
-  
+- **Vite**
+- **JavaScript**
+- **HTML / CSS**
+
+---
+
+## 🔄 Fluxo do Projeto
+
+O projeto segue o seguinte fluxo:
+
+**Fontes de vagas → Extração com Python → Tratamento dos dados → Estruturação das informações → Aplicação React**
+
+A etapa de extração foi mantida a partir do projeto anterior, preservando a lógica desenvolvida em Python para coleta e preparação das informações.
+
+A principal evolução desta versão está na **camada de apresentação**, utilizando React para disponibilizar os dados através de uma interface web.
+
 ---
 
 ## 🧠 Objetivo do Projeto
 
-Desenvolver uma **plataforma web integrada** que:
-1. Centralize vagas de estágio de fontes diversas (como CIEE, NUBE, Super Estágios e LinkedIn);
-2. Ofereça filtros personalizados (curso, cidade, modalidade, carga horária, etc.);
-3. Permita favoritar e acompanhar vagas;
-4. Simplifique o acesso dos estudantes às oportunidades do mercado.
+O projeto tem como objetivo demonstrar um fluxo completo envolvendo:
+
+1. Coleta automatizada de informações de vagas;
+2. Extração de dados utilizando Python;
+3. Tratamento e organização das informações coletadas;
+4. Estruturação dos dados para consumo pela aplicação;
+5. Desenvolvimento de uma interface web utilizando React;
+6. Apresentação das informações de forma simples e acessível.
 
 ---
 
-⚙️ Como Executar o Projeto
+## 🔗 Projeto Anterior
 
-git clone https://github.com/luckasp9/VAGA-DIRETA.git
-cd VAGA-DIRETA
+Esta aplicação é uma evolução do **Projeto Bi**, também desenvolvido e disponibilizado no perfil **@preduvitu**.
 
-🔍 Fontes de Dados
+No projeto anterior, o foco estava no processo de **extração, tratamento, análise e visualização dos dados utilizando Power BI**.
 
-A plataforma realiza coleta automatizada (scraping) de informações públicas em:
+Nesta versão, o processo de extração em Python foi mantido, enquanto a camada final de visualização foi alterada para uma **aplicação web desenvolvida em React**.
 
-CIEE
-NUBE
-Super Estágios
-LinkedIn
+Dessa forma, os dois projetos demonstram diferentes possibilidades de utilização de um mesmo processo de coleta e preparação de dados:
 
-(Todas as coletas respeitam os termos de uso e limitações técnicas das plataformas.)
+**Projeto Bi**
 
-🧾 Licença
+`Python → Extração → Tratamento → Power BI`
 
-Este projeto está sob a licença MIT – sinta-se à vontade para usar, estudar e contribuir.
+**Vaga Direta / Projeto Bi 2**
 
-💡 Observação
+`Python → Extração → Tratamento → React`
 
-Este projeto é parte integrante do Trabalho de Conclusão de Curso (TCC) e tem como objetivo aplicações educacionais e de pesquisa.
-O sistema não tem fins comerciais e respeita as políticas de privacidade das fontes de dados utilizadas.
+---
+
+## 🔍 Fontes de Dados
+
+A aplicação utiliza processos automatizados para coleta de informações públicas sobre vagas disponíveis em plataformas de emprego.
+
+As informações coletadas são posteriormente tratadas e estruturadas utilizando Python antes de serem disponibilizadas para a camada de visualização.
+
+---
+
+## 💡 Sobre o Projeto
+
+Este projeto possui finalidade **educacional e de portfólio**, demonstrando conhecimentos relacionados a:
+
+- Python
+- Web Scraping
+- Tratamento de dados
+- Automação
+- Estruturação de dados
+- React
+- Desenvolvimento Front-end
+- Integração entre processamento de dados e aplicações web
+
+A evolução do projeto também demonstra a possibilidade de reutilizar um pipeline de dados existente em diferentes soluções de visualização e consumo das informações.
